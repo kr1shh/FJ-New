@@ -109,3 +109,23 @@ class Footer_comp extends HTMLElement {
     hamBurger.classList.toggle("ham_active")
     mobNav.classList.toggle("mob_nav_active")
   })
+
+
+  /* Hero bg change */
+
+  const hero = document.querySelector(".hero_container");
+
+  const mediaQuery = window.matchMedia("(max-width: 480px)");
+  
+  const changeBackgroundImage = (mediaQuery) => {
+    if (mediaQuery.matches) {
+       hero.style.backgroundImage = "url('../assets/img/hero-mobile.jpg')";
+    } else {
+      hero.style.backgroundImage = "url('../assets/img/hero-desk.jpg')";
+    }
+  };
+  
+
+  changeBackgroundImage(mediaQuery);
+  mediaQuery.addEventListener("change", changeBackgroundImage);
+  
