@@ -4,7 +4,7 @@ class Navbar_comp extends HTMLElement {
             <nav>
                 <div class="nav_container">
                     <div class="nav_logo">
-                        <a href="#">
+                        <a href="/">
                             <h1>FJ</h1>
                         </a>
                     </div>
@@ -15,7 +15,7 @@ class Navbar_comp extends HTMLElement {
                             <li><a href="#">Gallery</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Contact</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="../pages/about.html">About</a></li>
                         </ul>
                     </div>
                     <div class="nav_ham">
@@ -35,7 +35,7 @@ class Navbar_comp extends HTMLElement {
                             <li><a href="#">Gallery</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Contact</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="../pages/about.html">About</a></li>
                         </ul>
                     </div>
                 </div>
