@@ -8,12 +8,16 @@ $regular:400;
 $light:300;
 
 .mob_contact_container{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 30px;
     font-family: $font_family;
+
+    @media(max-width:480px){
+        display: flex;
+    }
 
     p{
         margin-top: 120px;
@@ -74,4 +78,109 @@ $light:300;
             font-family: $font_family;
         }
     }
+}
+
+
+
+.desk_contact_container{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media(max-width:480px){
+        display: none;
+    }
+
+    .contact_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+        width: 600px;
+        height: 475px;
+        border: solid 1px;
+        background-color: #C4C4C4;
+        margin-top: 40px;
+        // margin-bottom: 130px;
+        border-radius: 30px;
+    }
+    
+    p{
+        font-family: $font_family;
+        text-align: center;
+
+        span{
+            font-weight: $bold;
+            font-size: 25px;
+        }
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        .details{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            textarea{
+                width: 215px;
+                height: 190px;
+                border: solid 1px;
+                border-radius: 20px;
+                padding: 10px 5px 0px 10px;
+                font-family: $font_family;
+    
+                &:focus{
+                    outline: none;
+                }
+    
+                &::placeholder{
+                    color: black;
+                }
+            }
+
+            .details_1{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap:40px;
+
+                input{
+                    width: 215px;
+                    height: 40px;
+                    border-radius: 20px;
+                    border: solid 1px;
+                    font-family: $font_family;
+                    padding: 0px 10px 0px 10px;
+                    color: $text-color;
+        
+                    &:focus{
+                        outline: none;
+                    }
+        
+                    &::placeholder{
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+        button{
+            width: 90px;
+            height: 40px;
+            border-radius: 20px;
+            border: solid 1px;
+            font-family: $font_family;
+        }
+    }
+
 }
