@@ -29,6 +29,11 @@ $light:300;
         overflow: hidden;
         border-radius: 50px;
         margin-bottom: 70px;
+        @media(min-width:769px){
+            width: 60%;
+            height: 400px;
+            margin-top: 40px;
+        }
 
         img{
             width: 100%;
@@ -39,6 +44,9 @@ $light:300;
 
     .content_2{
         width: 80%;
+        @media(min-width:768px){
+            width: 60%;
+        }
 
         h2{
             font-family: $font_family;
@@ -58,12 +66,18 @@ $light:300;
         align-items: center;
         justify-content: center;
         margin-bottom: 80px;
+        @media(min-width:768px){
+            width: 60%;
+        }
 
         h2{
             font-family: $font_family;
         }
         p{
             font-family: $font_family;
+            @media(min-width:768px){
+                text-align: center;
+            }
 
             span{
                 font-weight: $bold;
