@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/footerstyle.css">
+    <link rel="stylesheet" href="../dist/css/navstyle.css">
+    <link rel="stylesheet" href="../dist/css/brand_style.css">
+    <title>FJ Designs | Brands</title>
+</head>
+<body>
+    <navbar-el></navbar-el>
+
+
+    <section>
+        <div class="brand_container">
+
+            <div class="brand_card">
+                <div class="brand_content">
+                    <span>Felicitte</span>
+                    <p>
+                        Spreading happiness through whimsical girls' fashion, enchanting young hearts with joyful designs for delightful adventures in style.
+                    </p>
+                    <a href="#">
+                        <button>
+                            Let's Go
+                        </button>
+                    </a>
+                </div>
+
+                <div class="brand_overlay"></div>
+            </div>
+
+            <div class="brand_card">
+                <div class="brand_content">
+                    <span>Feli N Bro</span>
+                    <p>
+                        Spreading joy through vibrant boys' fashion, empowering young spirits with cheerful designs for confident, stylish adventures.
+                    </p>
+                    <a href="#">
+                        <button>
+                            Let's Go
+                        </button>
+                    </a>
+                </div>
+
+                <div class="brand_overlay"></div>
+            </div>
+
+
+            <div class="brand_card">
+                <div class="brand_content">
+                    <span>Folk Town</span>
+                    <p>
+                        Elevating men's fashion with timeless elegance, crafting quality pieces that exude confidence, style, and sophistication.
+                    </p>
+                    <a href="#">
+                        <button>
+                            Let's Go
+                        </button>
+                    </a>
+                </div>
+
+                <div class="brand_overlay"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!--swiper part-->
+
+
+
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="brand_card c1">
+            <div class="brand_content">
+                <span>Folk Town</span>
+                <p>
+                    Elevating men's fashion with timeless elegance, crafting quality pieces that exude confidence, style, and sophistication.
+                </p>
+                <a href="#">
+                    <button>
+                        Let's Go
+                    </button>
+                </a>
+            </div>
+
+            <div class="brand_overlay"></div>
+        </div>
+      </div>
+
+
+
+      <div class="swiper-slide">
+        <div class="brand_card c2">
+            <div class="brand_content">
+                <span>Feli N Bro</span>
+                <p>
+                    Spreading joy through vibrant boys' fashion, empowering young spirits with cheerful designs for confident, stylish adventures.
+                </p>
+                <a href="#">
+                    <button>
+                        Let's Go
+                    </button>
+                </a>
+            </div>
+
+            <div class="brand_overlay"></div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="brand_card c3">
+            <div class="brand_content">
+                <span>Felicitte</span>
+                <p>
+                    Spreading happiness through whimsical girls' fashion, enchanting young hearts with joyful designs for delightful adventures in style.
+                </p>
+                <a href="#">
+                    <button>
+                        Let's Go
+                    </button>
+                </a>
+            </div>
+
+            <div class="brand_overlay"></div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+
+
+
+
+
+
+    <footer-el></footer-el>
+    <script src="../components/components.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/948a568d62.js" crossorigin="anonymous"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
+</body>
+</html>

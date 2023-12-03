@@ -10,8 +10,8 @@ class Navbar_comp extends HTMLElement {
                     </div>
                     <div class="nav_links">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Brand</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="../pages/brands.html">Brand</a></li>
                             <li><a href="#">Gallery</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Contact</a></li>
@@ -30,8 +30,8 @@ class Navbar_comp extends HTMLElement {
                 <div class="mob_nav">
                     <div class="mob_nav_links">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Brand</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="../pages/brands.html">Brand</a></li>
                             <li><a href="#">Gallery</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Contact</a></li>
@@ -63,13 +63,13 @@ class Footer_comp extends HTMLElement {
                             <p>info@youremail.com</p>
                         </div>
                         <div class="footer_icons">
-                            <a href="#">
+                            <a href="https://www.instagram.com/nouapparels/">
                                 <i class="fa-brands fa-square-instagram" style="color: white;"></i>
                             </a>
                             <a href="#">
                                 <i class="fa-brands fa-square-facebook" style="color: white;"></i>
                             </a>
-                            <a href="#">
+                            <a href="https://www.linkedin.com/company/nou-apparels-pvt-ltd/">
                                 <i class="fa-brands fa-linkedin" style="color: white;"></i>
                             </a>
                             <a href="#">
