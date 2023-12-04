@@ -110,7 +110,7 @@ class Navbar_Comp extends HTMLElement {
                 <ul class="nav-list">
                     <div class="nav-img">
                     <li class="nav-link tofj" >
-                    <a href="/Brand.html">
+                    <a href="../../pages/brands.html">
                             <div class="tofj" id="tofj">
                                 <svg width="441" height="441" viewBox="0 0 441 441" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M270.243 134.007C277.419 141.183 277.419 152.817 270.243 159.993L209.736 220.5L270.243 281.007C277.419 288.183 277.419 299.817 270.243 306.993C263.067 314.169 251.433 314.169 244.257 306.993L170.757 233.493C163.581 226.317 163.581 214.683 170.757 207.507L244.257 134.007C251.433 126.831 263.067 126.831 270.243 134.007Z" fill="white"/>
