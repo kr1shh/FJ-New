@@ -26,12 +26,26 @@ section div.blog_container .blog_1 .blog_content_1, section div.blog_container .
   height: 230px;
   border-radius: 50px;
 }
+@media (max-width: 480px) {
+  section div.blog_container .blog_1 .blog_content_1, section div.blog_container .blog_3 .blog_content_1 {
+    flex-direction: column;
+    width: 290px;
+    height: 600px;
+  }
+}
 section div.blog_container .blog_1 .blog_content_1 .blog_cover_1, section div.blog_container .blog_3 .blog_content_1 .blog_cover_1 {
   overflow: hidden;
   width: 740px;
   height: 90%;
   margin-left: 10px;
   border-radius: 40px;
+}
+@media (max-width: 480px) {
+  section div.blog_container .blog_1 .blog_content_1 .blog_cover_1, section div.blog_container .blog_3 .blog_content_1 .blog_cover_1 {
+    width: 90%;
+    margin-top: 15px;
+    margin-left: 0;
+  }
 }
 section div.blog_container .blog_1 .blog_content_1 .blog_cover_1 img, section div.blog_container .blog_3 .blog_content_1 .blog_cover_1 img {
   width: 100%;
@@ -45,12 +59,30 @@ section div.blog_container .blog_1 .blog_content_1 .blog_details, section div.bl
   gap: 15px;
   margin-right: 10px;
 }
+@media (max-width: 480px) {
+  section div.blog_container .blog_1 .blog_content_1 .blog_details, section div.blog_container .blog_3 .blog_content_1 .blog_details {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 80%;
+  }
+}
 section div.blog_container .blog_1 .blog_content_1 .blog_details h3, section div.blog_container .blog_3 .blog_content_1 .blog_details h3 {
   margin: 0;
+}
+@media (max-width: 480px) {
+  section div.blog_container .blog_1 .blog_content_1 .blog_details h3, section div.blog_container .blog_3 .blog_content_1 .blog_details h3 {
+    text-align: center;
+  }
 }
 section div.blog_container .blog_1 .blog_content_1 .blog_details p, section div.blog_container .blog_3 .blog_content_1 .blog_details p {
   margin: 0;
   font-size: 13px;
+}
+@media (max-width: 480px) {
+  section div.blog_container .blog_1 .blog_content_1 .blog_details p, section div.blog_container .blog_3 .blog_content_1 .blog_details p {
+    text-align: center;
+  }
 }
 section div.blog_container .blog_1 .blog_content_1 .blog_details button, section div.blog_container .blog_3 .blog_content_1 .blog_details button {
   width: 120px;
@@ -71,6 +103,11 @@ section div.blog_container .blog_2 {
   align-items: center;
   justify-content: center;
   gap: 90px;
+}
+@media (max-width: 480px) {
+  section div.blog_container .blog_2 {
+    flex-direction: column;
+  }
 }
 section div.blog_container .blog_2 .blog_content_2 {
   display: flex;
