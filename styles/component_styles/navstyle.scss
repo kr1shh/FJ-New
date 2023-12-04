@@ -33,6 +33,7 @@ nav{
         align-items: center;
         justify-content: center;
         background-color: $background;
+        transition: all .3s;
     
         .nav_logo{
             a{
@@ -153,4 +154,10 @@ div.mob_nav_active{
             display: flex;
         }
     }
+}
+
+
+
+.nav_ham .black{
+    background-color: black !important;
 }

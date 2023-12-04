@@ -22,6 +22,7 @@ nav .nav_container {
   align-items: center;
   justify-content: center;
   background-color: white;
+  transition: all 0.3s;
 }
 nav .nav_container .nav_logo a {
   text-decoration: none;
@@ -119,4 +120,7 @@ div.mob_nav_active {
   nav .mob_nav {
     display: flex;
   }
+}
+.nav_ham .black {
+  background-color: black !important;
 }/*# sourceMappingURL=navstyle.css.map */
