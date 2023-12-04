@@ -1,0 +1,119 @@
+:root{
+    --bgcolor: #FFF7DC;
+    --primary: #85C3C4;
+    --second:#EEC825;
+    --uni:rgb(17, 17, 17);
+}
+
+.txt-scroll-cont{
+    position: relative;
+    /* top: 90%; */
+    width: 100%;
+    height: 35vh;
+    margin-top: 20vh;
+    /* display: flex;
+    flex-direction: column; */
+    overflow-x: hidden;
+}
+
+
+.line1-cont,
+.line2-cont,
+.line3-cont {
+    display: flex;
+    color: var(--bgcolor);
+    white-space: nowrap;
+    height: 8vh;
+}
+
+.line-1 {
+    position: absolute;
+    top: 0%;
+    left: -100vh;
+}
+
+.line-2 {
+    position: absolute;
+    top:39%;
+    right: -100vh;
+}
+
+.line-3 {
+    position: absolute;
+    bottom: 0%;
+    left: -100px;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+    /* transition: .5s; */
+    color: var(--primary);
+    background-color: var(--bgcolor);
+}
+
+.line-1 h1 {
+    margin: 0;
+    padding-right: 16px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    color: var(--primary);
+
+}
+
+.line-2 h1 {
+    margin: 0;
+    padding-right: 16px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    color: var(--primary);
+
+}
+
+.line-3 h1 {
+    margin: 0;
+    padding-right: 16px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    color: var(--primary);
+
+}
+
+.dot {
+    width: 18px;
+    height: 18px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 4px;
+    margin-right: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body{
+        overflow-x: hidden;
+    }
+    .txt-scroll-cont{
+    margin-top: -39vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .txt-scroll-cont{
+        margin-top: -35vh;
+        }
+}
+@media (min-width : 769px) and (max-width:1150px){
+    body{
+        overflow-x: hidden;
+    }
+    .txt-scroll-cont{
+        margin-top: -23vh;
+        }
+}

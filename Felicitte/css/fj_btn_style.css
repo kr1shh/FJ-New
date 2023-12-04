@@ -1,0 +1,87 @@
+:root{
+    --bgcolor: #FFF7DC;
+    --primary: #85C3C4;
+    --second:#EEC825;
+    --uni:rgb(17, 17, 17);
+}
+
+.fj-container {
+    position: fixed;
+    z-index: 999;
+    bottom: 1rem;
+    bottom: 7vh;
+    left: 7vh;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5rem;
+    border: 4px solid var(--primary);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgcolor);
+    transition: all .3s;
+}
+
+.fj-container .fj-arrow svg {
+    margin-top: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.fj-container .fj-logo h3 {
+    font-size: 1.3rem;
+    margin-left: -0.4rem;
+    margin-right: 1rem;
+    margin-bottom: 1.8rem;
+    color: var(--primary);
+}
+.fj-container .fj-col{
+    display: flex;
+    margin-top: .5rem;
+}
+.mob-on {
+    display: none;
+}
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    .fj-container{
+        display: flex;
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+    .fj-container .fj-arrow svg {
+        margin-top: .8rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .fj-container .fj-logo h3 {
+        font-size: 1rem;
+    }
+    .fj-container .fj-col{
+        margin-top: .8rem;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .fj-container{
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+    .fj-container .fj-arrow svg {
+        margin-top: .8rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .fj-container .fj-logo h3 {
+        font-size: 1rem;
+    }
+    .fj-container .fj-col{
+        margin-top: .8rem;
+    }
+}

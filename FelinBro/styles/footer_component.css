@@ -1,0 +1,130 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+
+:root{
+    --primary:#D04C00;
+    --light-primary : #FE6C30;
+    --background : #F8FBFD;
+    --secondary : #0D304E;
+    --uni : #131313;
+  }
+
+
+footer{
+    position: absolute;
+    z-index: 99;
+    margin-top: 314vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer-container {
+    width: 100%;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 20px; 
+    flex-wrap: wrap; 
+    font-family: 'Quicksand', sans-serif;
+}
+
+.footer-item {
+    text-align: center;
+    color: var(--background);
+    margin: 10px;
+    order: 1; 
+}
+.footer-item span{
+    font-size: 1.3vh;
+}
+
+.footer-item p {
+    color: black;
+    font-size: 1.2vh;
+}
+
+.footer-item h1 {
+    font-size: 4vh;
+    color: var(--background);
+}
+
+.footer-item img {
+    width: 11vh;
+}
+
+.footer-item .social-icons,
+.footer-item a {
+    color: var(--background);
+    text-decoration: none;
+}
+.footer-item .social-icons,
+.footer-item a:hover {
+    color: var(--secondary);
+}
+
+
+.footer-container .copy-r {
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105%;
+    margin-left: -3vh;
+    background-color: white;
+    color: var(--uni);
+}
+
+/* Media query for screens between 320px and 48px */
+@media (min-width: 320px) and (max-width: 480px) {
+    .footer-container {
+        flex-direction: column; 
+    }
+
+    .footer-item {
+        flex-basis: 100%;
+        margin: 2vh; 
+    }
+    /* .footer-item:nth-child(2){
+        order: 0;
+    }*/
+    .footer-item p {
+    font-size: 1.8vh;
+    } 
+
+    /* .footer-item h1 {
+        font-size: 2vh;
+    } */
+
+    .footer-item img {
+        width: 11vh;
+    }
+    .cop{
+        font-size: smaller;
+    }
+}
+
+/* Media query for screens between 481px and 768px */
+@media (min-width: 481px) and (max-width: 768px){
+
+    .footer-container {
+        flex-direction: column; 
+    }
+
+    .footer-item {
+        flex-basis: 100%; 
+        order: 2; 
+    }
+
+    /* .footer-item:nth-child(2) {
+        flex-basis: auto; 
+        order: 1; 
+    } */
+
+    /* .footer-item:nth-child(1),
+    .footer-item:nth-child(3) {
+        flex-basis: 100%; 
+    } */
+}

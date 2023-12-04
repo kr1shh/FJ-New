@@ -1,0 +1,72 @@
+:root{
+    --bgcolor: #FFF7DC;
+    --primary: #85C3C4;
+    --second:#EEC825;
+    --uni:rgb(17, 17, 17);
+}
+
+.scroll-pro{
+    display: grid;
+    place-items: center;
+    background-color: var(--primary);
+    position: fixed;
+    bottom: 7vh;
+    right: 7vh;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 9999;
+    padding-bottom: 1px;
+}
+.scroll-pro:hover{
+    box-shadow: -3px -1px 72px -32px var(--primary);
+}
+.scroll-up{
+    width: 43px;
+    height: 43px;
+    border-radius: 25px;
+    background-color: var(--bgcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll-pro svg path{
+    fill: var(--primary);
+    stroke: var(--primary);
+    stroke-width: 1px;
+}
+.mob-on {
+    display: none;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    .scroll-pro{
+        width: 40px;
+        height: 40px;
+    }
+    .scroll-up{
+        width: 33px;
+        height: 33px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .scroll-up{
+        width: 50px;
+        height: 50px;
+    }
+    .scroll-up{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width : 769px) and (max-width:1150px){
+    .scroll-up{
+        width: 50px;
+        height: 50px;
+    }
+}

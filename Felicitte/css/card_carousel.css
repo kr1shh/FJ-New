@@ -1,0 +1,239 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+
+
+:root{
+  --bgcolor: #FFF7DC;
+  --primary: #85C3C4;
+  --second:#EEC825;
+  --uni:rgb(17, 17, 17);
+}
+
+.car-title-div{
+  display: flex;
+  justify-content: center;
+  padding-top: 7%;
+}
+
+.car-title-div .car-title{
+  color: var(--uni);
+}
+
+.car-view {
+  width: 100%; 
+  overflow-x: auto; 
+  overflow-y: hidden;
+  white-space: nowrap; 
+  position: relative; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.car-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 10px;
+  position: relative;
+  margin-top: 5vh;
+}
+
+.car-container > div {
+  flex: 0 0 120px;
+  border-radius: 0.5rem;
+  transition:  0.5s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.car-container > div:nth-of-type(1) {
+  background: url("../assets/img/1.jpg") no-repeat 20% / cover;
+}
+
+.car-container > div:nth-of-type(2) {
+  background: url("../assets/img/7.jpg") no-repeat 50% / cover;
+}
+
+.car-container > div:nth-of-type(3) {
+  background: url("../assets/img/5.jpg") no-repeat 50% / cover;
+}
+
+.car-container > div:nth-of-type(4) {
+  background: url("../assets/img/3.jpg") no-repeat 50% / cover;
+}
+
+.car-container > div:nth-of-type(5) {
+  background: url("../assets/img/7.jpg") no-repeat 50% / cover;
+}
+.car-container > div:nth-of-type(6) {
+    background: url("../assets/img/4.jpg") no-repeat 50% / cover;
+  }
+  .car-container > div:nth-of-type(7) {
+    background: url("../assets/img/11.jpg") no-repeat 50% / cover;
+  }
+  .car-container > div:nth-of-type(8) {
+    background: url("../assets/img/8.jpg") no-repeat 50% / cover;
+  }
+
+.car-container > div .content {
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  opacity: 0;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.676) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translateY(100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+  visibility: hidden;
+}
+
+
+.car-container > div > h2 {
+  transform: rotate(-90deg);
+  transform-origin: 12 2; 
+  z-index: 9;
+  white-space: nowrap; 
+  position: absolute; 
+  bottom: 10; 
+  left: 10; 
+  margin-top: 110px; 
+  padding: 0; 
+}
+
+
+.car-container > div:hover {
+  flex: 0 0 250px;
+}
+
+.car-container > div:hover .content {
+  opacity: 1;
+  transform: translateY(0%);
+  visibility: visible;
+}
+
+.car-container > div .content span {
+  display: block;
+  margin-top: .1vh;
+  margin-bottom: 8vh;
+  font-size: 1.2rem;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .car-container > div:nth-of-type(4),
+  .car-container > div:nth-of-type(5),
+  .car-container > div:nth-of-type(6),
+  .car-container > div:nth-of-type(7),
+  .car-container > div:nth-of-type(8) {
+    display: none;
+  }
+
+ /* .car-view{
+  width: 100%;
+  height: 65vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+ }
+ .car-view::-webkit-scrollbar {
+  display: none;
+ }
+ .car-container{
+  width: 250%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin-left: 6vh;
+  margin-right:3vh ;
+ }
+
+ .car-container > div {
+  flex: 1 1 auto;
+  max-width: 50%;
+ } */
+ .car-container > div {
+  flex: 0 0 90px;
+}
+ .caro-view {
+  width: 100%; 
+  height: 48vh;
+  overflow-x: auto;
+  white-space: nowrap; 
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+ }
+ .caro-view::-webkit-scrollbar {
+  display: none;
+ }
+ .car-container {
+  height: 85%;
+  /* margin-left: 5%;
+  margin-right:8vh ; */
+  justify-content: center;
+ }
+ .car-title-div{
+padding-top: 21%;
+ }
+
+} 
+@media (min-width: 481px) and (max-width: 768px) {
+  .caro-view {
+    width: 100%; 
+    height: 112vh;
+    overflow-x: auto;
+    white-space: nowrap; 
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+   }
+   .caro-view::-webkit-scrollbar {
+    display: none;
+   }
+   .car-container {
+    height: 47%;
+    margin-left: 5%;
+    margin-right:8vh ;
+    justify-content: start;
+   }
+   .car-title-div{
+    padding-top: 16%;
+   }
+}
+@media (min-width : 769px) and (max-width:1150px) {
+  .caro-view {
+    width: 100%; 
+    height: 112vh;
+    overflow-x: auto;
+    white-space: nowrap; 
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+   }
+   .caro-view::-webkit-scrollbar {
+    display: none;
+   }
+   .car-container {
+    height: 56%;
+    margin-left: 5%;
+    margin-right:5% ;
+    justify-content: start;
+   }
+   .car-title-div{
+    padding-top: 12%;
+   }
+}

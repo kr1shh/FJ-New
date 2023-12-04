@@ -1,0 +1,67 @@
+:root {
+  --primary: #fff;
+}
+
+.scroll-pro {
+  background-color: var(--primary);
+  opacity: 0;
+  z-index: 9999;
+  border-radius: 25px;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  padding-bottom: 1px;
+  transition: opacity .3s ease-in-out;
+  display: grid;
+  position: fixed;
+  bottom: 7vh;
+  right: 7vh;
+}
+
+.scroll-pro:hover {
+  box-shadow: -3px -1px 72px -32px var(--primary);
+}
+
+.scroll-up {
+  background-color: #000;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 43px;
+  display: flex;
+}
+
+.scroll-pro svg path {
+  fill: var(--primary);
+  stroke: var(--primary);
+  stroke-width: 1px;
+}
+
+@media (width >= 320px) and (width <= 480px) {
+  .scroll-pro {
+    width: 40px;
+    height: 40px;
+  }
+
+  .scroll-up {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+@media (width >= 481px) and (width <= 768px) {
+  .scroll-up {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (width >= 769px) and (width <= 1150px) {
+  .scroll-up {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/*# sourceMappingURL=index.358bab08.css.map */

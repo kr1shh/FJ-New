@@ -1,0 +1,132 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+
+:root{
+    --bgcolor: #FFF7DC;
+    --primary: #85C3C4;
+    --second:#EEC825;
+    --light-second : #ffe56f;
+    --uni:rgb(22, 22, 22);
+}
+footer{
+    position: absolute;
+    z-index: 99;
+    margin-top: 314vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer-container {
+    width: 100%;
+    height: 33vh;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    align-items: center; 
+    /* padding: 20px;  */
+    flex-wrap: wrap; 
+    font-family: 'Quicksand', sans-serif;
+}
+
+.footer-item {
+    text-align: center;
+    color: white;
+    margin: 10px;
+    order: 1; 
+}
+.footer-item span{
+    font-weight: 800;
+}
+
+.footer-item p {
+    font-size: 1.2vh;
+    font-weight: 500;
+}
+
+.footer-item h1 {
+    font-size: 4vh;
+    color: white;
+}
+
+.footer-item img {
+    width: 9vh;
+    margin-bottom: 2vh;
+}
+
+.footer-item .social-icons,
+.footer-item a {
+    text-decoration: none;
+    color: white;
+}
+.footer-container .copy-r {
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105%;
+    margin-left: -3vh;
+    margin-top: -2vh;
+    background-color: white;
+    color: var(--uni);
+}
+
+.footer-item .social-icons,
+.footer-item a :hover {
+    color: var(--light-second);
+}
+
+
+/* Media query for screens between 320px and 48px */
+@media (min-width: 320px) and (max-width: 480px) {
+    .footer-container {
+        flex-direction: column; 
+    }
+
+    .footer-item {
+        margin: 2vh; 
+    }
+    /* .footer-item:nth-child(2){
+        order: 0;
+    }*/
+    .footer-item p {
+    font-size: 1vh;
+    } 
+    .footer-container .copy-r {
+        height: 2vh;
+    }
+
+    /* .footer-item h1 {
+        font-size: 2vh;
+    } */
+
+    .footer-item img {
+        width: 10vh;
+    }
+    .cop{
+        font-size: smaller;
+    }
+}
+
+/* Media query for screens between 481px and 768px */
+@media (min-width: 481px) and (max-width: 768px){
+
+    .footer-container {
+        flex-direction: column; 
+    }
+
+    .footer-item {
+        order: 2; 
+    }
+
+    /* .footer-item:nth-child(2) {
+        flex-basis: auto; 
+        order: 1; 
+    } */
+
+    /* .footer-item:nth-child(1),
+    .footer-item:nth-child(3) {
+        flex-basis: 100%; 
+    } */
+}

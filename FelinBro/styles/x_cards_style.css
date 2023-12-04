@@ -1,0 +1,340 @@
+:root{
+        --color-primary-white: rgb(240, 240, 240);
+}
+:root{
+  --primary:#D04C00;
+  --light-primary : #FE6C30;
+  --background : #F8FBFD;
+  --secondary : #0D304E;
+  --uni : #131313;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.x-card-sticky{
+    position: relative;
+    height: 165vh;
+    top: 110vh;
+}
+
+.x-card-container{
+    overflow: hidden;
+    position: sticky;
+    top: 4vh;
+    height: 100vh;
+}
+.x-card-scroll{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 0px;
+    height: 100%;
+    width: 165vw;
+    will-change: transform;
+
+}
+
+.x-card-container .x-card:nth-child(6){
+  display: none;
+}
+.x-card-container .x-card{
+  width: 24rem;
+  height: 36rem;
+  margin-top: 4rem;
+  border-radius: 10px;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-white);
+}
+.x-card .x-card-overlay{
+    width: 24rem;
+  height: 36rem;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+    opacity: 0;
+  transition: opacity .3s ease-in;
+}
+.x-card img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+}
+.x-card h2{
+      position: absolute;
+      margin: 0;
+      inset: auto auto 30px 30px;
+      transition: inset 0.3s 0.3s ease-out;
+      font-weight: normal;
+      text-transform: uppercase;
+      z-index: 2;
+}
+.x-card p,
+.x-card a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity 0.3s ease-out;
+  z-index: 2;
+
+}
+.x-card p {
+  inset: auto auto 80px 30px;
+}
+
+.x-card a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.x-card:hover .x-card-overlay{
+    opacity: 1;
+}
+
+.x-card:hover h2 {
+  inset: auto auto 220px 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.x-card:hover p,
+.x-card:hover a {
+  opacity: 1;
+  transition: opacity 0.5s 0.1s ease-in;
+}
+
+.x-card:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+.x-card:hover .x-card-overlay{
+    opacity: 1;
+}
+
+.x-find-icon {
+  vertical-align: middle;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+  .n-card-sticky {
+    position: relative;
+    width: 100%;
+    height: 200vh;
+    top: 110vh;
+  }
+
+  .n-card-container {
+    overflow: hidden;
+    position: static;
+    top: 4%;
+    height: 100%;
+  }
+
+  .n-card-scroll {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    top: 7%;
+    height: 80%;
+    width: 100%;
+    will-change: transform;
+
+  }
+
+  .x-card-container .x-card {
+    place-self: center;
+    width: 90%;
+    height: 45vh;
+    margin-top: 4rem;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .n-card .x-card-overlay {
+    width: 100%;
+    height: 100%;
+  }
+
+  .x-card-container .x-card:nth-child(4) {
+    display: none;
+  }
+    .x-card-container .x-card:nth-child(5) {
+    display: none;
+  }
+    .x-card-container .x-card:nth-child(6) {
+    display: none;
+  }
+
+  .x-card h2 {
+    position: absolute;
+    margin: 0;
+    inset: auto auto 30px 25px;
+    transition: inset 0.3s 0.3s ease-out;
+    font-size: smaller;
+    font-weight: bold;
+  }
+
+  .n-card p,
+  .n-card a {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity 0.3s ease-out;
+    z-index: 2;
+    font-size: 10px;
+  }
+
+  .n-card p {
+    inset: auto auto 65px 20px;
+  }
+
+  .n-card a {
+    inset: auto auto 25px 20px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .n-card:hover h2 {
+    inset: auto auto 220px 20px;
+    transition: inset 0.3s ease-out;
+  }
+
+
+
+
+  div.fade-out-container {
+    top: 200vh;
+  }
+
+  .fade-out-container .fade-col {
+    margin-left: 1.5%;
+  }
+  .f-btn button {
+    left: 40%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .n-card-sticky {
+    position: relative;
+    width: 100%;
+    height: 200vh;
+    top: 110vh;
+  }
+
+  .n-card-container {
+    overflow: hidden;
+    position: static;
+    top: 4vh;
+    height: 100vh;
+  }
+
+  .n-card-scroll {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    top: 0px;
+    height: 95%;
+    width: 100%;
+    will-change: transform;
+
+  }
+
+  .x-card-container .x-card {
+    place-self: center;
+    width: 90%;
+    height: 90%;
+    margin-top: 4rem;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .x-card .x-card-overlay {
+    width: 100%;
+    height: 100%;
+  }
+
+  .x-card-container .x-card:nth-child(6) {
+    display: block;
+  }
+
+  .x-card h2 {
+    position: absolute;
+    margin: 0;
+    inset: auto auto 30px 25px;
+    transition: inset 0.3s 0.3s ease-out;
+    font-size: smaller;
+    font-weight: bold;
+  }
+
+  .n-card p,
+  .n-card a {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity 0.3s ease-out;
+    z-index: 2;
+    font-size: 10px;
+  }
+
+  .n-card p {
+    inset: auto auto 65px 20px;
+  }
+
+  .n-card a {
+    inset: auto auto 25px 20px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .n-card:hover h2 {
+    inset: auto auto 220px 20px;
+    transition: inset 0.3s ease-out;
+  }
+
+
+
+
+  div.fade-out-container {
+    top: 200vh;
+  }
+
+  .fade-out-container .fade-col {
+    margin-left: 1.5%;
+  }
+
+}
+@media (min-width: 769px) and (max-width: 1024px){
+  .x-card-container .x-card{
+    width: 20rem;
+    height: 29rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px){
+  .x-card-container{
+    top: 15vh;
+}
+.x-card-container .x-card{
+  width: 19rem;
+  height: 29rem;
+}
+}
+@media (min-width: 1441px) and (max-width: 1600px){
+  .x-card-container{
+    top: 22vh;
+ }
+}

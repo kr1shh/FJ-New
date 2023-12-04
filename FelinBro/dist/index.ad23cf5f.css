@@ -1,0 +1,84 @@
+@import "https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap";
+:root {
+  --peach: #ce8a6d;
+}
+
+footer {
+  z-index: 99;
+  width: 100%;
+  margin-top: 314vh;
+  position: absolute;
+  overflow: hidden;
+}
+
+.footer-container {
+  background-color: #050505;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  font-family: Quicksand, sans-serif;
+  display: flex;
+}
+
+.footer-item {
+  text-align: center;
+  color: #fff;
+  flex-basis: calc(33.33% - 20px);
+  order: 1;
+  margin: 10px;
+}
+
+.footer-item p {
+  font-size: 2vh;
+}
+
+.footer-item h1 {
+  color: var(--peach);
+  font-size: 4vh;
+}
+
+.footer-item img {
+  width: 24vh;
+}
+
+.footer-item .social-icons, .footer-item a {
+  color: #fff;
+}
+
+@media (width >= 320px) and (width <= 480px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-item {
+    flex-basis: 100%;
+    margin: 2vh;
+  }
+
+  .footer-item p {
+    font-size: 1.8vh;
+  }
+
+  .footer-item img {
+    width: 21vh;
+  }
+
+  .cop {
+    font-size: smaller;
+  }
+}
+
+@media (width >= 481px) and (width <= 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-item {
+    flex-basis: 100%;
+    order: 2;
+  }
+}
+
+/*# sourceMappingURL=index.ad23cf5f.css.map */

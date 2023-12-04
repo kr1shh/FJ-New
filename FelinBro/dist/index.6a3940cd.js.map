@@ -1,0 +1,1 @@
+{"mappings":"AAAA,IAAI,KAAK;IACL,QAAO;IACP,UAAU;AACZ","sources":["scripts/aos_script.js"],"sourcesContent":["AOS.init({\r\n    offset:100,\r\n    duration: 1000\r\n  });"],"names":[],"version":3,"file":"index.6a3940cd.js.map","sourceRoot":"/__parcel_source_root/"}

@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+
+
+    --primary:#D04C00;
+    --light-primary : #FE6C30;
+    --background : #F8FBFD;
+    --secondary : #0D304E;
+    --uni : #131313;
+  }
+
+/* ====================Scroll bar================== */
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #F8FBFD #D04C00;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    width: 3px;
+    width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--primary);
+}
+
+
+/*====================== Styles ==================*/
+
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    margin: 0vh;
+    padding: 0vh;
+    background-image: url('../assets/imgs/BG-Doodles.svg');
+    background-repeat: repeat;
+    background-size: 400px 400px;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/*====================== Hero Section ==================*/
+
+
+main .hero-background{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    overflow: hidden;
+    background-image: url(../assets/imgs/10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 30%;
+    z-index: 0;
+    transition: all 0.2s ease-in-out;
+}
+.hero-overlay{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 80%);
+    opacity: 60%;
+}
+.hero-logo{
+    position: absolute;
+    width: 26vh;
+    height: 6vh;
+    z-index: 2;
+}
+.hero-logo img{
+    width: 100%;
+}
+.hero-slogan{
+    position: absolute;
+    z-index: 2;
+    color: var(--background);
+    top: 53%;
+}
+
+.hero-slogan p{
+    font-size: 1.5vh;
+}
+.main-arrow {
+    position: absolute;
+    height: 8vh;
+    width: 8vh;
+    left: 48%;
+    bottom: 2vh;
+    z-index: 4;
+    animation: jump 2s infinite;
+}
+
+
+/* ====================Animation for down arrow================== */
+@keyframes jump {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-15px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+
+
+
+.content-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: transparent;
+    margin-top: 100vh;
+    z-index: 99;
+}
+
+.content-container .card {
+    display: grid;
+    place-items: center;
+    width: 50%;
+    height: 43vh;
+    color: var(--background);
+    padding: 4vh;
+    background-color: var(--primary);
+    border-radius: 5vh;
+    transition: .3s;
+    overflow: hidden;
+    box-shadow: 14px 21px 43px -26px rgba(0,0,0,0.75);
+}
+
+
+.card span {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 4vh;
+    margin-bottom: -3vh;
+    font-weight: 700;
+    color: var(--bgcolor);
+}
+
+.card p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.4vh;
+    font-weight: 300;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+
+
+
+
+
+
+/*====================== Fade out gallery ==================*/
+
+
+div.fade-out-container{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    top: 195vh;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+.fade-out-overlay{
+    top: 10rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(3, 3, 3, 0) 80%)
+}
+
+.f-btn button{
+    position: absolute;
+    z-index: 3;
+    top: 80%;
+    left: 48%;
+    width: 15vh;
+    height: 5vh;
+    outline: none;
+    letter-spacing: 1px;
+    color: var(--primary);
+    background-color: transparent;
+    border: solid 1px var(--primary);
+    border-radius: 5vh;    
+    transition: .2s;
+}
+
+.f-btn button:hover{
+    border: solid 0px var(--primary);
+    color: var(--background);
+    background-color: var(--secondary);
+}
+.fade-out-container .fade-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vh;
+    height: 100%;
+    margin: .3%;
+}
+.fade-col .fade-img{
+    width: 30vh;
+    height: 50vh;
+    margin-top: 1vh;
+
+}
+
+.fade-img img{
+    /* position: absolute; */
+    object-fit: cover;
+    width: 100%;
+    /* /* height: 100%;
+    top: 0;
+    left: 0; */
+    border-radius: 1vh;
+    transition: .3s;
+} 
+
+.fade-out-container >:nth-child(3){
+    margin-top: 15vh;
+}
+/* .fade-out-container >:nth-child(4){
+} */
+.fade-out-container >:nth-child(5){
+    margin-top: 15vh;
+}
+/* .fade-out-container >:nth-child(6){
+} */
+.fade-out-container >:nth-child(7){
+    margin-top: 15vh;
+}
+/* .fade-out-container >:nth-child(8){
+
+} */
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+    main .hero-background{
+        background-position: -304px 0px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px){
+    main .hero-background{
+        background-position: -150px 0px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+}
+@media (min-width: 1025px) and (max-width: 1440px){
+    div.fade-out-container{
+        top : 200vh;
+    }
+}
+@media (min-width : 1441px){
+    div.fade-out-container{
+        top : 200vh;
+    }
+}

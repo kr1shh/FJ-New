@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../styles/outline_txt.css"> -->
+    <title>Document</title>
+</head>
+<style>
+    body {
+        height: 300vh;
+        background-color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .outline-txt-container{
+    /* position: absolute; */
+    top: 15vh;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    /* top: 60vh; */
+    /* /* display: flex; */
+    justify-content: center;
+    align-items: center; 
+    /* background-color: aquamarine; */
+}
+.outline-txt-container .outline-txt{
+    position: absolute;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.outline-txt svg{
+    width: 50%;
+}
+.outline-txt svg path{
+    fill: white;
+    stroke:white;
+    stroke-width: 3px;
+    stroke-dasharray: 1301px;
+    stroke-dashoffset: 155px;
+    fill-opacity: 0;
+}
+
+.outline-txt svg path.animate-svg{
+    animation: progress 1.5s forwards ease-in-out;
+}
+
+.txt-random{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    color: white;
+}
+
+.txt-random p{
+  text-align: center;
+}
+
+
+.random-item-1{
+  grid-column: 1; 
+  grid-row: 1;
+}
+
+.random-item-2{
+  grid-column: 3; 
+  grid-row: 1;
+}
+
+.random-item-3{
+  grid-column: 5; 
+  grid-row: 1;
+}
+.random-item-4{
+  grid-column: 7; 
+  grid-row: 1;
+}
+.random-item-5{
+  grid-column: 2; 
+  grid-row: 2;
+}
+.random-item-6{
+  grid-column: 4; 
+  grid-row: 2;
+}
+.random-item-7{
+  grid-column: 6; 
+  grid-row: 2;
+}
+.random-item-8{
+  grid-column: 1; 
+  grid-row: 3;
+}
+.random-item-9{
+  grid-column: 3; 
+  grid-row: 3;
+}
+.random-item-10{
+  grid-column: 5; 
+  grid-row: 3;
+}
+.random-item-11{
+  grid-column: 7; 
+  grid-row: 3;
+}
+.random-item-12{
+  grid-column: 2; 
+  grid-row: 4;
+}
+.random-item-13{
+  grid-column: 4; 
+  grid-row: 4;
+}
+.random-item-14{
+  grid-column: 6; 
+  grid-row: 4;
+}
+.random-item-15{
+  grid-column: 1; 
+  grid-row: 5;
+}
+.random-item-16{
+  grid-column: 3; 
+  grid-row: 5;
+}
+.random-item-17{
+  grid-column: 5; 
+  grid-row: 5;
+}
+.random-item-18{
+  grid-column: 7; 
+  grid-row: 5;
+}
+.random-item-19{
+  grid-column: 2; 
+  grid-row: 6;
+}
+.random-item-20{
+  grid-column: 4; 
+  grid-row: 6;
+}
+.random-item-21{
+  grid-column: 6; 
+  grid-row: 6;
+}
+
+
+
+
+
+
+
+
+
+@keyframes progress{
+    0%{
+        stroke-dashoffset: 1301px;
+    }
+    85%{
+        fill-opacity: 0;
+    }
+    100%{
+        stroke-dashoffset: 155px;
+        fill-opacity: 1;
+    }
+}
+
+
+
+
+</style>
+
+<body>
+    <div class="outline-txt-container" style="top:100vh;">
+        <div id="outline-txt" class="outline-txt">
+            <svg id="anim" width="1285" height="186" viewBox="0 0 1285 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M96.426 185.57C82.7193 185.57 69.955 183.343 58.133 178.888C46.4823 174.262 36.288 167.837 27.55 159.613C18.9833 151.218 12.3013 141.366 7.504 130.058C2.70667 118.75 0.308001 106.414 0.308001 93.05C0.308001 79.686 2.70667 67.35 7.504 56.042C12.3013 44.734 19.069 34.968 27.807 26.744C36.545 18.3487 46.7393 11.9237 58.39 7.46899C70.0407 2.84299 82.805 0.52999 96.683 0.52999C111.418 0.52999 124.867 3.09999 137.032 8.24C149.197 13.2087 159.477 20.6617 167.872 30.599L146.284 50.902C139.773 43.8773 132.492 38.6517 124.439 35.225C116.386 31.627 107.648 29.828 98.225 29.828C88.8017 29.828 80.1493 31.37 72.268 34.454C64.558 37.538 57.7903 41.907 51.965 47.561C46.311 53.215 41.8563 59.897 38.601 67.607C35.517 75.317 33.975 83.798 33.975 93.05C33.975 102.302 35.517 110.783 38.601 118.493C41.8563 126.203 46.311 132.885 51.965 138.539C57.7903 144.193 64.558 148.562 72.268 151.646C80.1493 154.73 88.8017 156.272 98.225 156.272C107.648 156.272 116.386 154.559 124.439 151.132C132.492 147.534 139.773 142.137 146.284 134.941L167.872 155.501C159.477 165.267 149.197 172.72 137.032 177.86C124.867 183 111.332 185.57 96.426 185.57ZM280.416 185.57C266.367 185.57 253.431 183.257 241.609 178.631C229.787 174.005 219.507 167.58 210.769 159.356C202.031 150.961 195.263 141.195 190.466 130.058C185.669 118.75 183.27 106.414 183.27 93.05C183.27 79.686 185.669 67.4357 190.466 56.299C195.263 44.991 202.031 35.225 210.769 27.001C219.507 18.6057 229.787 12.095 241.609 7.46899C253.431 2.84299 266.281 0.52999 280.159 0.52999C294.208 0.52999 307.058 2.84299 318.709 7.46899C330.531 12.095 340.811 18.6057 349.549 27.001C358.287 35.225 365.055 44.991 369.852 56.299C374.649 67.4357 377.048 79.686 377.048 93.05C377.048 106.414 374.649 118.75 369.852 130.058C365.055 141.366 358.287 151.132 349.549 159.356C340.811 167.58 330.531 174.005 318.709 178.631C307.058 183.257 294.294 185.57 280.416 185.57ZM280.159 156.272C289.24 156.272 297.635 154.73 305.345 151.646C313.055 148.562 319.737 144.193 325.391 138.539C331.045 132.714 335.414 126.032 338.498 118.493C341.753 110.783 343.381 102.302 343.381 93.05C343.381 83.798 341.753 75.4027 338.498 67.864C335.414 60.154 331.045 53.472 325.391 47.818C319.737 41.9927 313.055 37.538 305.345 34.454C297.635 31.37 289.24 29.828 280.159 29.828C271.078 29.828 262.683 31.37 254.973 34.454C247.434 37.538 240.752 41.9927 234.927 47.818C229.273 53.472 224.818 60.154 221.563 67.864C218.479 75.4027 216.937 83.798 216.937 93.05C216.937 102.131 218.479 110.526 221.563 118.236C224.818 125.946 229.273 132.714 234.927 138.539C240.581 144.193 247.263 148.562 254.973 151.646C262.683 154.73 271.078 156.272 280.159 156.272ZM412.462 183V3.09999H439.961L552.784 141.623H539.163V3.09999H572.316V183H544.817L431.994 44.477H445.615V183H412.462ZM657.015 183V31.37H597.391V3.09999H750.049V31.37H690.425V183H657.015ZM805.963 77.887H895.399V105.386H805.963V77.887ZM808.533 154.987H910.048V183H775.123V3.09999H906.45V31.113H808.533V154.987ZM947.293 183V3.09999H974.792L1087.61 141.623H1073.99V3.09999H1107.15V183H1079.65L966.825 44.477H980.446V183H947.293ZM1191.85 183V31.37H1132.22V3.09999H1284.88V31.37H1225.26V183H1191.85Z"
+                    fill="white" />
+            </svg>
+        </div>
+        <div class="txt-random">
+            <p class="random-item-1">CONTENT</p>
+            <p class="random-item-2">CONTENT</p>
+            <p class="random-item-3">CONTENT</p>
+            <p class="random-item-4">CONTENT</p>
+            <p class="random-item-5">CONTENT</p>
+            <p class="random-item-6">CONTENT</p>
+            <p class="random-item-7">CONTENT</p>
+            <p class="random-item-8">CONTENT</p>
+            <p class="random-item-9">CONTENT</p>
+            <p class="random-item-10">CONTENT</p>
+            <p class="random-item-11">CONTENT</p>
+            <p class="random-item-12">CONTENT</p>
+            <p class="random-item-13">CONTENT</p>
+            <p class="random-item-14">CONTENT</p>
+            <p class="random-item-15">CONTENT</p>
+            <p class="random-item-16">CONTENT</p>
+            <p class="random-item-17">CONTENT</p>
+            <p class="random-item-18">CONTENT</p>
+            <p class="random-item-19">CONTENT</p>
+            <p class="random-item-20">CONTENT</p>
+            <p class="random-item-21">CONTENT</p>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    
+    <script src="
+    https://cdn.jsdelivr.net/npm/vivus@0.4.6/dist/vivus.min.js
+    "></script>
+
+    <script>
+
+
+
+
+// Function to start the SVG animation
+function startSvgAnimation() {
+  // Add a class to start the animation
+  const svgPath = document.querySelector("#outline-txt svg path");
+  svgPath.classList.add("animate-svg");
+}
+
+// Function to handle the Intersection Observer callback
+function handleIntersection(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      startSvgAnimation();
+    }
+  });
+}
+
+// Create an Intersection Observer
+const observer = new IntersectionObserver(handleIntersection, {
+  threshold: 0.5, // Adjust this threshold as needed
+});
+
+// Target the container element
+const container = document.querySelector(".outline-txt-container");
+
+// Start observing the container
+observer.observe(container);
+
+
+
+
+
+
+
+
+
+        // const outlinePath = document.querySelector("#animated-path");
+
+        // const observer = new IntersectionObserver((entries) => {
+        //     entries.forEach((entry) => {
+        //         if (entry.isIntersecting) {
+        //             outlinePath.style.animation = "progress 1.5s 1 forwards ease-in";
+        //         } else {
+        //             outlinePath.style.animation = "none";
+        //         }
+        //     });
+        // });
+
+        // const container = document.querySelector(".outline-txt-container");
+
+        // observer.observe(container);
+
+
+
+
+    </script>
+
+</body>
+
+</html>

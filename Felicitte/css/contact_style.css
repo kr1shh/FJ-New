@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+
+
+:root{
+  --bgcolor: #FFF7DC;
+  --primary: #85C3C4;
+  --second:#EEC825;
+  --third : #5c9d9e;
+  --forth : #a5dfe0;
+  --uni:rgb(17, 17, 17);
+}
+
+
+/* Using grid */
+.contact-container {
+    width: 50%;
+    height: 69%;
+    padding: 3vh;
+    color: var(--bgcolor);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0px;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 5vw;
+    background-color: var(--third);
+    border: 1px solid var(--third);
+    transition: .3s;
+    box-shadow: 14px 21px 43px -26px rgba(0,0,0,0.75);
+  }
+  .contact-item {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .item-1 {
+    grid-column: 1 / span 2; /* Make item-1 span two columns */
+  }
+ .item-1 .title{
+    margin: 0;
+    font-weight: 700;
+    font-size: xx-large;
+    color: var(--second);
+ }
+ .item-1 .title p{
+    margin: 0;
+    font-size: large;
+ }
+
+  .item-6 {
+    grid-column: 1 / span 2; /* Make item-1 span two columns */
+  }
+  .item-3 {
+    grid-row: span 3; 
+  }
+  .contact{
+    width:100%;
+    height:100vh;
+    padding-top: 5vh;
+    display: grid;
+    place-items: center;
+  }
+::placeholder{
+    text-indent: 2vh;
+    color: var(--primary);
+    font-family: 'Quicksand', sans-serif;
+}
+
+  .contact-item input,textarea,button{
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+    color: var(--primary);
+    padding-left:2vh ;
+    border: 1px solid;
+    border-color: var(--third);
+    border-radius: 5vh;
+    outline: none;
+  }
+  .contact-item input{
+    width: 80%;
+    height: 80%;
+  }
+  .contact-item textarea{
+    padding-top: 2vh;
+    border-radius: 3vh;
+    width: 40vh;
+    height: 35vh;
+  }
+  .contact-item button{
+    width: 30%;
+    height:100%;
+    cursor: pointer;
+    background-color: var(--second);
+    color: white;
+  }
+  
+ 
+
+
+
+@media (min-width: 320px) and (max-width: 480px){
+  ::placeholder{
+    text-indent: 2vh;
+    color: var(--primary);
+    font-family: 'Quicksand', sans-serif;
+}
+    .contact-container {
+        width: 80%; 
+        height: 78%;/* Adjust the width for mobile screens */
+        grid-template-columns: 1fr; /* Change to a single column layout */
+        grid-template-rows: repeat(6, 1fr); /* Add an extra row for spacing */
+        gap: 0px;
+        overflow: auto; /* Add overflow to make the contact section scrollable */
+        max-height: 120vh;
+        background-color: transparent;
+        border: none;
+        color: var(--primary);
+      }
+      .contact-container:hover{
+        box-shadow: none;
+      }
+    
+      /* Define the grid items for mobile screens */
+    
+      .item-1 {
+        grid-row: 1 / span 1; /* Place item-1 in the first row */
+        grid-column: 1 / span 1; /* Place item-1 in the first column */
+      }
+    
+      .item-2 {
+        grid-row: 2 / span 1; /* Place item-2 in the second row */
+        grid-column: 1 / span 1; /* Place item-2 in the first column */
+      }
+    
+      .item-4 {
+        grid-row: 3 / span 1; /* Place item-4 in the third row */
+        grid-column: 1 / span 1; /* Place item-4 in the first column */
+      }
+    
+      .item-5 {
+        grid-row: 4 / span 1; /* Place item-5 in the fourth row */
+        grid-column: 1 / span 1; /* Place item-5 in the first column */
+      }
+    
+      .item-3 {
+        grid-row: 5 / span 1; /* Place item-3 in the fifth row */
+        grid-column: 1 / span 1; /* Place item-3 in the first column */
+      }
+    
+      .item-6 {
+        grid-row: 6 / span 1; /* Place item-6 in the sixth row */
+        grid-column: 1 / span 1; /* Place item-6 in the first column */
+      }
+      .contact-item{
+        margin-bottom: 1rem;
+      }
+
+
+      .contact {
+        height: 115vh;
+    }
+
+
+    .contact-item input,
+  .contact-item textarea{
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--bgcolor);
+    color: var(--primary);
+    padding: 1vh 2vh; /* Adjust padding to provide spacing between elements */
+    border: 1px solid var(--bgcolor);
+    border-radius: 5vw; /* Rounded corners */
+    outline: none;
+    height: 5vh;
+    width: 80%; /* Make input fields take up full width */
+  }
+
+  .contact-item textarea {
+    /* Adjust the height and remove fixed width for the textarea */
+    height: 18vh;
+  }
+
+  .contact-item button {
+    /* Adjust button width for mobile screens */
+    width: 80%;
+    height: 7vh;
+    margin-top: 1vh; /* Add spacing between button and other elements */
+    background-color: var(--bgcolor);
+    color: var(--primary);
+  }
+  .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 15vh; */
+  }
+}
+.item-1 .title{
+  font-size: 4vh;
+}
+
+
+
+@media (min-width: 481px) and (max-width: 768px){
+  .contact-container{
+      width: 86%;
+      height: 63%;
+  }
+  .contact-item textarea{
+      height: 28vh;
+      width: 94%;
+  }
+  .contact-item input{
+      height:5.5vh;
+  }
+  .contact-item button{
+      height: 6vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+  .contact-item textarea{
+      width: 95%;
+      height: 30vh;
+  }
+  .contact-container{
+      width: 60%;
+      /* height: 100vh; */
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px){
+  .contact-item textarea{
+    width: 94%;
+    height: 30vh;
+}
+}
