@@ -12,8 +12,8 @@ class Navbar_comp extends HTMLElement {
                         <ul>
                             <li><a href="/">Home</a></li>
                             <li><a href="../pages/brands.html">Brand</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="../pages/gallery.html">Gallery</a></li>
+                            <li><a href="../pages/blog.html">Blog</a></li>
                             <li><a href="../pages/contact.html">Contact</a></li>
                             <li><a href="../pages/about.html">About</a></li>
                         </ul>
@@ -32,8 +32,8 @@ class Navbar_comp extends HTMLElement {
                         <ul>
                             <li><a href="/">Home</a></li>
                             <li><a href="../pages/brands.html">Brand</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="../pages/gallery.html">Gallery</a></li>
+                            <li><a href="../pages/blog.html">Blog</a></li>
                             <li><a href="../pages/contact.html">Contact</a></li>
                             <li><a href="../pages/about.html">About</a></li>
                         </ul>
