@@ -165,4 +165,9 @@
   border-radius: 20px;
   border: solid 1px;
   font-family: "Montserrat";
+  transition: all 0.4s;
+}
+.desk_contact_container form button:hover {
+  background-color: black;
+  color: white;
 }/*# sourceMappingURL=contact_style.css.map */
