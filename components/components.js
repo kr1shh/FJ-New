@@ -149,6 +149,7 @@ class Footer_comp extends HTMLElement {
     // Initial styles
     if (document.title === "FJ Designs | Home") {
         navBg.style.backgroundColor = "transparent";
+        navBg.style.boxShadow = "0px 0px 0px 0px rgba(0,0,0,0.75)"
         logo.style.color = "white";
         navLinks.forEach((link) => {
             link.style.color = "white";
@@ -163,6 +164,7 @@ class Footer_comp extends HTMLElement {
         if (document.title === "FJ Designs | Home") {
             if (window.scrollY > 100) {
                 navBg.style.backgroundColor = "white";
+                navBg.style.boxShadow = "0px 2px 15px 0px rgba(0,0,0,0.3)"
                 logo.style.color = "black";
                 navLinks.forEach((link) => {
                     link.style.color = "black";
@@ -172,6 +174,7 @@ class Footer_comp extends HTMLElement {
                 });
             } else {
                 navBg.style.backgroundColor = "transparent";
+                navBg.style.boxShadow = "0px 0px 0px 0px rgba(0,0,0,0.75)"
                 logo.style.color = "white";
                 navLinks.forEach((link) => {
                     link.style.color = "white";

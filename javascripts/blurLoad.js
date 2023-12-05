@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    const loadImg = document.querySelectorAll(".gallery_img img");
+    const loadGalleryImg = document.querySelectorAll(".gallery_img img");
 
-    loadImg.forEach((image) => {
+    loadGalleryImg.forEach((image) => {
         if (image.complete) {
             addLoadedClass(image);
         } else {
@@ -63,3 +63,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /* ======================================================== */
 
+/* ============================= For Blog page =========================== */
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const loadBlogImg1 = document.querySelectorAll(".blog_cover_1 img");
+    const loadBlogImg2 = document.querySelectorAll(".blog_cover_2 img");
+
+    loadBlogImg1.forEach((image) => {
+        if (image.complete) {
+            addLoadedClass(image);
+        } else {
+            image.addEventListener("load", () => {
+                addLoadedClass(image);
+            });
+        }
+    });
+
+
+    loadBlogImg2.forEach((image) => {
+        if (image.complete) {
+            addLoadedClass(image);
+        } else {
+            image.addEventListener("load", () => {
+                addLoadedClass(image);
+            });
+        }
+
+    });
+});
+
+
+/* ======================================================== */

@@ -20,11 +20,11 @@ section div.blog_container .blog_1 .blog_content_1, section div.blog_container .
   align-items: center;
   justify-content: center;
   gap: 15px;
-  background-color: #C4C4C4;
   border: solid 1px #969696;
   width: 740px;
   height: 230px;
   border-radius: 50px;
+  background-color: #C4C4C4;
 }
 @media (max-width: 480px) {
   section div.blog_container .blog_1 .blog_content_1, section div.blog_container .blog_3 .blog_content_1 {
@@ -39,6 +39,9 @@ section div.blog_container .blog_1 .blog_content_1 .blog_cover_1, section div.bl
   height: 90%;
   margin-left: 10px;
   border-radius: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 @media (max-width: 480px) {
   section div.blog_container .blog_1 .blog_content_1 .blog_cover_1, section div.blog_container .blog_3 .blog_content_1 .blog_cover_1 {
@@ -52,6 +55,11 @@ section div.blog_container .blog_1 .blog_content_1 .blog_cover_1 img, section di
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+section div.blog_container .blog_1 .blog_content_1 .blog_cover_1 img.loaded, section div.blog_container .blog_3 .blog_content_1 .blog_cover_1 img.loaded {
+  opacity: 1;
 }
 section div.blog_container .blog_1 .blog_content_1 .blog_details, section div.blog_container .blog_3 .blog_content_1 .blog_details {
   display: flex;
@@ -97,6 +105,12 @@ section div.blog_container .blog_1 .blog_content_1 .blog_details button:hover, s
   color: white;
   background-color: black;
 }
+@media (max-width: 480px) {
+  section div.blog_container .blog_1 .blog_content_1 .blog_details button, section div.blog_container .blog_3 .blog_content_1 .blog_details button {
+    color: white;
+    background-color: black;
+  }
+}
 section div.blog_container .blog_2 {
   width: 100%;
   display: flex;
@@ -126,9 +140,19 @@ section div.blog_container .blog_2 .blog_content_2 .blog_cover_2 {
   height: 190px;
   overflow: hidden;
   border-radius: 40px 40px 8px 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 section div.blog_container .blog_2 .blog_content_2 .blog_cover_2 img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+section div.blog_container .blog_2 .blog_content_2 .blog_cover_2 img.loaded {
+  opacity: 1;
 }
 section div.blog_container .blog_2 .blog_content_2 .blog_details_2 {
   display: flex;
@@ -158,4 +182,10 @@ section div.blog_container .blog_2 .blog_content_2 .blog_details_2 button {
 section div.blog_container .blog_2 .blog_content_2 .blog_details_2 button:hover {
   color: white;
   background-color: black;
+}
+@media (max-width: 480px) {
+  section div.blog_container .blog_2 .blog_content_2 .blog_details_2 button {
+    color: white;
+    background-color: black;
+  }
 }/*# sourceMappingURL=blog_style.css.map */
