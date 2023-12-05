@@ -100,7 +100,7 @@ class Footer_comp extends HTMLElement {
 
 
 
-  /* Mob nav toggle */
+
 
   const hamBurger = document.querySelector(".nav_ham")
   const mobNav = document.querySelector(".mob_nav")
@@ -108,6 +108,10 @@ class Footer_comp extends HTMLElement {
   const logo = document.querySelector(".nav_logo a h1");
   const navLinks = document.querySelectorAll(".nav_links ul li a");
   const hamBurgerIcon = document.querySelectorAll(".nav_container .nav_ham .ham-icon");
+
+
+    /* Mob nav toggle */
+
 
   hamBurger.addEventListener("click",()=>{
     hamBurger.classList.toggle("ham_active")
@@ -145,9 +149,11 @@ class Footer_comp extends HTMLElement {
 
   /* Nav bar color change */
 
-  document.addEventListener("DOMContentLoaded", () => {
-    // Initial styles
-    if (document.title === "FJ Designs | Home") {
+
+
+
+      // Initial styles
+      if (document.title === "FJ Designs | Home" && window.screenY < 100) {
         navBg.style.backgroundColor = "transparent";
         navBg.style.boxShadow = "0px 0px 0px 0px rgba(0,0,0,0.75)"
         logo.style.color = "white";
@@ -157,7 +163,22 @@ class Footer_comp extends HTMLElement {
         hamBurgerIcon.forEach((icon) => {
             icon.style.backgroundColor = "white";
         });
-    }
+        console.log("if working");
+        } 
+        else {
+            navBg.style.backgroundColor = "white";
+            navBg.style.boxShadow = "0px 0px 0px 0px rgba(0,0,0,0.75)"
+            logo.style.color = "black";
+            navLinks.forEach((link) => {
+                link.style.color = "black";
+            });
+            hamBurgerIcon.forEach((icon) => {
+                icon.style.backgroundColor = "black";
+            });
+            console.log("else working");
+        }
+
+  document.addEventListener("DOMContentLoaded", () => {
 
     // Scroll event listener
     window.addEventListener("scroll", () => {
@@ -172,6 +193,7 @@ class Footer_comp extends HTMLElement {
                 hamBurgerIcon.forEach((icon) => {
                     icon.style.backgroundColor = "black";
                 });
+
             } else {
                 navBg.style.backgroundColor = "transparent";
                 navBg.style.boxShadow = "0px 0px 0px 0px rgba(0,0,0,0.75)"
@@ -182,6 +204,7 @@ class Footer_comp extends HTMLElement {
                 hamBurgerIcon.forEach((icon) => {
                     icon.style.backgroundColor = "white";
                 });
+
             }
         }
     });
