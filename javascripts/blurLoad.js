@@ -95,3 +95,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 /* ======================================================== */
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const loadAboutImg = document.querySelector(".content_img img");
+
+        if (loadAboutImg.complete) {
+            addLoadedClass(loadAboutImg);
+        } else {
+            loadAboutImg.addEventListener("load", () => {
+                addLoadedClass(loadAboutImg);
+            });
+        }
+    });

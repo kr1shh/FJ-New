@@ -29,6 +29,10 @@ $light:300;
         overflow: hidden;
         border-radius: 50px;
         margin-bottom: 70px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
         @media(min-width:769px){
             width: 60%;
             height: 400px;
@@ -39,6 +43,11 @@ $light:300;
             width: 100%;
             height: 100%;
             object-fit: cover;
+            opacity: 0;
+            transition: opacity .5s ease-in-out;
+        }
+        img.loaded{
+            opacity: 1;
         }
     }
 

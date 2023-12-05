@@ -19,6 +19,9 @@
   overflow: hidden;
   border-radius: 50px;
   margin-bottom: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (min-width: 769px) {
   .about_containerr .content_img {
@@ -32,6 +35,11 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.about_containerr .content_img img.loaded {
+  opacity: 1;
 }
 .about_containerr .content_2 {
   width: 80%;
