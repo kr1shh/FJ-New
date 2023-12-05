@@ -16,8 +16,9 @@ $light:300;
     justify-content: center;
     gap: 15px;
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     @media (max-width:480px){
+        height: 100svh;
         display: none;
     }
 
