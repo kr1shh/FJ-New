@@ -23,10 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
 /* ======================================================== */
 
 
-
-
-
-
 /* ============================= For Brand page =========================== */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -42,6 +38,28 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+/* ======================================================== */
+
+
+/* ============================= For Gallery page =========================== */
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const loadImg = document.querySelectorAll(".gallery_img img");
+
+    loadImg.forEach((image) => {
+        if (image.complete) {
+            addLoadedClass(image);
+        } else {
+            image.addEventListener("load", () => {
+                addLoadedClass(image);
+            });
+        }
+    });
+});
+
+
 
 /* ======================================================== */
 

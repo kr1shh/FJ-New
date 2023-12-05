@@ -48,9 +48,13 @@ div.gallery_container .gallery_covers .gallery_row .gallery_img:hover img {
 div.gallery_container .gallery_covers .gallery_row .gallery_img img {
   width: 100%;
   height: 100%;
+  opacity: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: all 0.3s;
+  transition: transform 0.3s, opacity 1s ease-in-out;
+}
+div.gallery_container .gallery_covers .gallery_row .gallery_img img.loaded {
+  opacity: 1;
 }
 @media (max-width: 480px) {
   div.gallery_container .gallery_covers .gallery_row:nth-child(1) {
@@ -67,4 +71,88 @@ div.gallery_container .gallery_covers .gallery_row:nth-child(2) {
 }
 div.gallery_container .gallery_covers .gallery_row:nth-child(4) {
   height: 80%;
+}
+
+.g1 {
+  background-image: url("../../assets/gallery/1-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.g2 {
+  background-image: url("../../assets/gallery/2-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.g3 {
+  background-image: url("../../assets/gallery/3-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.g4 {
+  background-image: url("../../assets/gallery/4-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.g5 {
+  background-image: url("../../assets/gallery/5-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.g6 {
+  background-image: url("../../assets/gallery/6-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.g7 {
+  background-image: url("../../assets/gallery/7-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.g8 {
+  background-image: url("../../assets/gallery/8-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.g9 {
+  background-image: url("../../assets/gallery/9-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.g10 {
+  background-image: url("../../assets/gallery/10-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.g11 {
+  background-image: url("../../assets/gallery/11-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.g12 {
+  background-image: url("../../assets/gallery/12-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=gallery_style.css.map */
