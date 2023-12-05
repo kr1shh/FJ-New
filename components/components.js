@@ -121,14 +121,16 @@ class Footer_comp extends HTMLElement {
   /* Hero bg change */
 
   const hero = document.querySelector(".hero_container");
-
+  const heroImg = document.querySelector(".hero_container img")
   const mediaQuery = window.matchMedia("(max-width: 480px)");
   
   const changeBackgroundImage = (mediaQuery) => {
     if (mediaQuery.matches) {
-       hero.style.backgroundImage = "url('../assets/img/hero-mobile.jpg')";
+       hero.style.backgroundImage = "url('../assets/img/hero-mobile-small.jpg')";
+       heroImg.src = "../assets/img/hero-mobile.jpg"
     } else {
-      hero.style.backgroundImage = "url('../assets/img/hero-desk.jpg')";
+      hero.style.backgroundImage = "url('../assets/img/hero-desk-small.jpg')";
+      heroImg.src = "../assets/img/hero-desk.jpg"
     }
   };
   
