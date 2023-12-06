@@ -397,11 +397,35 @@ customElements.define('xtxt-scroll',txtScrolling);
 
 /*-----------------------------Navbar hide effect-----------------------------------*/
 
-
-window.addEventListener("scroll",function(){
-    var header = this.document.querySelector("header");
-    header.classList.toggle("sticky",window.scrollY)
+document.addEventListener("DOMContentLoaded",()=>{
+    function handleStickyHeader() {
+        var header = document.querySelector("header");
+        if (document.title == "Felicette | Home") {
+          header.classList.toggle("sticky", window.scrollY > 0);
+        } else {
+          header.classList.add("sticky");
+        }
+      }
+    
+      // Call the function when the page loads
+      handleStickyHeader();
+    
+      // Add a scroll event listener to continuously update the "sticky" class
+      window.addEventListener("scroll", handleStickyHeader);
 })
+
+
+
+
+
+
+
+
+
+// window.addEventListener("scroll",function(){
+//     var header = this.document.querySelector("header");
+//     header.classList.toggle("sticky",window.scrollY)
+// })
 
 const mobile_nav = document.querySelector(".mob-nav-btn");
 const mob_nav_menu = document.querySelector(".mob-nav-menu");
@@ -436,7 +460,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const fjLogo = document.querySelector(".tofj a");
         const fjArrow = document.querySelector(".tofj svg path");
 
-        if (title === "Felicitte | Home" && window.scrollY === 0) {
+        if (title === "Felicette | Home" && window.scrollY === 0) {
             // Initial styles for the home page
             fjLogo.style.color="white";
             fjArrow.style.fill="white";
@@ -475,9 +499,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to handle mouseleave
     function handleMouseLeave(event) {
         const title = document.title;
-        if (title === "Felicitte | Home" && window.scrollY === 0) {
+        if (title === "Felicette | Home" && window.scrollY === 0) {
             event.target.style.color = "white";
-        } else if (title === "Felicitte | Home") {
+        } else if (title === "Felicette | Home") {
             event.target.style.color = "#85C3C4";
         } else {
             event.target.style.color = "#85C3C4"; // For other pages
@@ -494,7 +518,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const fjArrow = document.querySelector(".tofj svg path");
 
 
-        if (title === "Felicitte | Home" && window.scrollY === 0) {
+        if (title === "Felicette | Home" && window.scrollY === 0) {
             fjLogo.style.color="white";
             fjArrow.style.fill="white";
             logo.forEach((element) => {

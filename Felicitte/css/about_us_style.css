@@ -15,7 +15,7 @@
 
 .about-container{
     width: 100%;
-    height: 30vh;
+    height: 205px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,7 +35,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: justify;
-    text-align-last: justify;
+    /* text-align-last: justify; */
 }
 
 .about-container .about-description{
@@ -50,16 +50,16 @@
 
 .mv-container{
     width: 100%;
-    height: 60vh;
+    height: 460px;
     display: flex;
     justify-content: center;
     text-align: justify;
-    text-align-last: justify;
+    /* text-align-last: justify; */
     padding-top:10vh;
     color: var(--primary);
 }
 .mv-container .m-container{
-    height: 45vh;
+    height: 320px;
     width: 19%;
     display: flex;
     align-items: center;
@@ -71,7 +71,7 @@
     box-shadow: 0px 1px 58px -21px rgba(0,0,0,0.75);
 }
 .mv-container .v-container{
-    height: 45vh;
+    height: 320px;
     width: 19%;
     display: flex;
     align-items: center;
@@ -90,11 +90,12 @@
 
 .text-container{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -80px;
+    /* margin-top: -80px; */
+    margin-bottom: 70px;
 }
 .text-container .text-content{
     display: flex;
@@ -102,37 +103,87 @@
     align-items: center;
     justify-content: center;
     text-align: justify;
-    text-align-last: justify;
+    /* text-align-last: justify; */
     width: 60%;
-    height: 70%;
-    padding: 3vh;  
+    /* height: 70%; */
+    padding: 80px;  
     border-radius: 5vh;  
-    background-color: var(--primary);
-    color: white;
+    background-color: white;
+    color: var(--primary);
+    box-shadow: -5px 5px 9px 3px rgba(0,0,0,0.26);
 }
+
+.text-container p {
+  font-size: 28px;
+}
+
+
+.quote{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.quote .quote_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+  width: 500px;
+  height: 300px;
+  box-shadow: -5px 5px 9px 3px rgba(0,0,0,0.26);
+  background-color: white;
+  color: var(--primary);
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.quote .quote_content p{
+  font-size: 20px;
+  font-weight: 500;
+}
+.quote .quote_content p span{
+  font-weight: 700;
+  font-size: 25px;
+}
+
 
 
 
 /*------------------ RESPONSIVE STYLES --------------------*/
 
+
+
+
+
 @media (min-width: 320px) and (max-width: 480px){
 
+
+
+  .quote .quote_content{
+    height: 450px;
+    width: 207px;
+  }
     .about-container h2{
         font-size: 1.2em;
       }
       .about-container p{
-        font-size: .53em;
+        font-size: 11px;
       }
     
       .mv-container h2{
         font-size: 1em;
       }
       .mv-container p{
-        font-size: .7em;
+        font-size: 13px;
       }
     
       .text-container p{
-        font-size: .7em;
+        font-size: 15px;
       }
     
 
@@ -151,27 +202,28 @@
       }
 
       .text-container{
-        height: 141vh;
+        height: 350px;
       }
 
 
       .text-container .text-content{
-        width: 90%;
-        height: 115vh;
+        width: 80%;
+        height: 210px;
+        padding: 25px;
       }
 
 
 }
 
+
+
 @media (min-width: 481px) and (max-width: 768px){
-
-
 
   .about-container h2{
     font-size: 1.7em;
   }
   .about-container p{
-    font-size: .9em;
+    font-size: 13px;
   }
 
   .mv-container h2{
@@ -182,14 +234,19 @@
   }
 
   .text-container p{
-    font-size: .7em;
+    font-size: 19px;
   }
 
 
 }
 
-@media (min-width : 769px) and (max-width:1150px){
-
-    /*-------------------- TEXT CARD STYLES ---------------------*/
-  
+@media(min-width:769px) and (max-width:1024px){
+  .mv-container .v-container {
+    height: 300px;
+    width: 29%;
+  }
+  .mv-container .m-container {
+    height: 300px;
+    width: 29%;
+  }
 }
