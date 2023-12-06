@@ -14,12 +14,16 @@ $light:300;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 35px;
     width: 100%;
     height: 100vh;
     @media (max-width:480px){
         // height: 100svh;
         display: none;
+    }
+    @media (max-width:860px){
+        // height: 100svh;
+        gap: 0;
     }
 
 
