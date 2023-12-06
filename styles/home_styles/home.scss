@@ -79,6 +79,7 @@ section.content_1{
         @media(max-width:480px){
             flex-direction: column;
             height: auto;
+            gap: 0;
         }
 
         .cont_sec:nth-child(1){
@@ -138,17 +139,17 @@ section.content_2{
         background-color: #D9D9D9;
         border-radius: 140px;
 
+        @media (max-width:1024px){
+            width: 95%;
+        }
+
         @media(max-width:480px){
             flex-direction: column;
             height: 533px;
             gap: 0px;
             border-radius: 62px;
             margin: 50px 0px 0px 0px;
-        }
-
-
-        @media (max-width:1024px){
-            width: 95%;
+            width: 290px;
         }
 
         .cont_sec:nth-child(1){
@@ -178,7 +179,7 @@ section.content_2{
                 
                 @media(max-width:480px){
                     text-align: center;
-                    width: 300px;
+                    width: 265px;
                 }
 
 
