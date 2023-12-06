@@ -122,11 +122,38 @@ class Footer_comp extends HTMLElement {
   })
 
 
+/* =========Body BG change============== */
+
+
+const body = document.body
+const mediaQuery = window.matchMedia("(max-width: 480px)");
+
+const changeBodyImage = (mediaQuery) => {
+  if (mediaQuery.matches) {
+     body.style.backgroundImage = "url('../assets/img/patternBGwhite90.svg')";
+  } else {
+    body.style.backgroundImage = "url('../assets/img/patternBGwhite.svg')";
+  }
+};
+
+
+changeBodyImage(mediaQuery);
+mediaQuery.addEventListener("change", changeBodyImage);
+
+
+
+
+
+
+
+
+
+
   /* Hero bg change */
 
   const hero = document.querySelector(".hero_container");
   const heroImg = document.querySelector(".hero_container img")
-  const mediaQuery = window.matchMedia("(max-width: 480px)");
+//   const mediaQuery = window.matchMedia("(max-width: 480px)");
   
   const changeBackgroundImage = (mediaQuery) => {
     if (mediaQuery.matches) {
