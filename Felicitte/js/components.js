@@ -17,7 +17,7 @@ class Footer_Comp extends HTMLElement {
                 <img src="./assets/img/Felicette white.png"><br>
                 <span>Companymail@mail.com</span><br><br>
                 <div class="social-icons">
-                    <a href="#">
+                    <a href="https://instagram.com/felicette.in?igshid=NzZlODBkYWE4Ng==">
                         <svg class="ins-icon" width="26" height="27" viewBox="0 0 26 27" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -25,7 +25,7 @@ class Footer_Comp extends HTMLElement {
                                 fill="white" />
                         </svg>
                     </a>&nbsp;&nbsp;
-                    <a href="#">
+                    <a href="https://www.facebook.com/Felicette.in?mibextid=ZbWKwL">
                         <svg class="fb-icon" width="25" height="25" viewBox="0 0 25 25" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"

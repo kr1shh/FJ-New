@@ -63,13 +63,13 @@ class Footer_comp extends HTMLElement {
                             <p>info@youremail.com</p>
                         </div>
                         <div class="footer_icons">
-                            <a href="https://www.instagram.com/nouapparels/">
+                            <a href="https://www.instagram.com/thefjdesigns">
                                 <i class="fa-brands fa-square-instagram" style="color: white;"></i>
                             </a>
-                            <a href="#">
+                            <a href="https://www.facebook.com/profile.php?id=100091396817681&mibextid=ZbWKwL">
                                 <i class="fa-brands fa-square-facebook" style="color: white;"></i>
                             </a>
-                            <a href="https://www.linkedin.com/company/nou-apparels-pvt-ltd/">
+                            <a href="#">
                                 <i class="fa-brands fa-linkedin" style="color: white;"></i>
                             </a>
                             <a href="#">
