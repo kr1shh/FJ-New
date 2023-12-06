@@ -8,7 +8,6 @@
 }
 @media (max-width: 480px) {
   .brand_container {
-    height: 100svh;
     display: none;
   }
 }
@@ -135,7 +134,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100dvh;
+  height: 100vh;
 }
 @media (max-width: 480px) {
   .swiper {
