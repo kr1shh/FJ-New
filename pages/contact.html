@@ -46,13 +46,13 @@
                 <form action="#">
                     <div class="details">
                         <div class="details_1">
-                            <input type="text" placeholder="Name" required>
-                            <input type="email" placeholder="Email" required>
-                            <input type="number" placeholder="Phone" required>
+                            <input type="text" placeholder="Name" id="name" required>
+                            <input type="email" placeholder="Email" id="email" required>
+                            <input type="number" placeholder="Phone" id="phone" required>
                         </div>
-                        <textarea placeholder="Your Message" cols="30" rows="10"></textarea>
+                        <textarea placeholder="Your Message" id="message" cols="30" rows="10"></textarea>
                     </div>
-                    <button type="submit">
+                    <button onclick="sendMail()">
                         Send
                     </button>
                 </form>
@@ -66,5 +66,41 @@
     <footer-el></footer-el>
     <script src="../components/components.js"></script>
     <script src="https://kit.fontawesome.com/948a568d62.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("aiJAsNyzxd-ZVp2F_");
+        })();
+    </script>
+
+    <script>
+        function sendMail() {
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+            var message = document.getElementById("message").value;
+            var email = document.getElementById("email").value;
+
+            if (!name || !phone || !message || !email) {
+                alert("Please fill out all required fields.");
+                return; 
+            }
+
+            const params = { name, phone, message, email };
+            const serviceID = "service_4pnj8pq";
+            const templateID = "template_q6yksk4";
+
+            emailjs.send(serviceID, templateID, params)
+                .then(res => {
+                    document.getElementById("name").value = "";
+                    document.getElementById("phone").value = "";
+                    document.getElementById("message").value = "";
+                    document.getElementById("email").value = "";
+                    console.log(res);
+                    alert("Your message was sent successfully!");
+                })
+                .catch(err => console.log(err));
+        }
+
+    </script>
 </body>
 </html>
