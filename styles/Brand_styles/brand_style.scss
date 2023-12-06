@@ -158,14 +158,20 @@ $light:300;
 }
 
 
-
+.swiper_mob{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
 
 .swiper {
     display: none;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 600px;
     margin-top: 20px;
     @media (max-width:480px){
         display: flex;
