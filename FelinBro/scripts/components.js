@@ -12,7 +12,7 @@ class Footer_Comp extends HTMLElement {
         </div> -->
         <div class="footer-item">
             <img src="./assets/imgs/FeliNbro white.png"><br>
-            <span>Companymail@mail.com</span><br><br>
+            <span>info@felinbro.com</span><br><br>
             <div class="social-icons">
                 <a href="#">
                     <svg class="ins-icon" width="26" height="27" viewBox="0 0 26 27" fill="none"

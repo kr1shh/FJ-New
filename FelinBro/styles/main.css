@@ -144,7 +144,7 @@ main .hero-background{
 .content-container {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 550px;
     display: grid;
     place-items: center;
     background-color: transparent;
@@ -155,8 +155,8 @@ main .hero-background{
 .content-container .card {
     display: grid;
     place-items: center;
-    width: 50%;
-    height: 43vh;
+    width: 80%;
+    /* height: 43vh; */
     color: var(--background);
     padding: 4vh;
     background-color: var(--primary);
@@ -170,17 +170,17 @@ main .hero-background{
 .card span {
     font-family: 'Quicksand', sans-serif;
     font-size: 4vh;
-    margin-bottom: -3vh;
+    margin-bottom: 3px;
     font-weight: 700;
     color: var(--bgcolor);
 }
 
 .card p {
     font-family: 'Quicksand', sans-serif;
-    font-size: 2.4vh;
+    font-size: 25px;
     font-weight: 300;
     text-align: justify;
-    text-align-last: justify;
+    /* text-align-last: justify; */
 }
 
 
@@ -197,7 +197,7 @@ div.fade-out-container{
     justify-content: space-around;
     position: relative;
     overflow: hidden;
-    top: 195vh;
+    top: 1450px;
     height: 100vh;
     width: 100%;
     z-index: 1;
@@ -283,21 +283,28 @@ div.fade-out-container{
     main .hero-background{
         background-position: -304px 0px;
     }
+    .card p {
+        font-size: 13px;
+    }
 }
 @media (min-width: 481px) and (max-width: 768px){
     main .hero-background{
         background-position: -150px 0px;
+        background-position: center;
+    }
+    .card p {
+        font-size: 17px;
     }
 }
 @media (min-width: 769px) and (max-width: 1024px){
 }
-@media (min-width: 1025px) and (max-width: 1440px){
+@media (min-width: 1025px) {
+    div.fade-out-container{
+        top : 1650px;
+    }
+}
+/* @media (min-width : 1441px){
     div.fade-out-container{
         top : 200vh;
     }
-}
-@media (min-width : 1441px){
-    div.fade-out-container{
-        top : 200vh;
-    }
-}
+} */

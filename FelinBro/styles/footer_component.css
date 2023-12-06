@@ -39,6 +39,7 @@ footer{
 }
 .footer-item span{
     font-size: 1.3vh;
+    text-transform: uppercase;
 }
 
 .footer-item p {
