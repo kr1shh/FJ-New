@@ -162,6 +162,7 @@ $light:300;
     justify-content: center;
     width: 100%;
     height: 100vh;
+    margin-top: 20px;
     @media (max-width:480px){
         display: flex;
     }
@@ -197,7 +198,7 @@ $light:300;
         background-color: gray;
         overflow: hidden;
         position: relative;
-        margin: 19vh auto;
+        margin: 115px auto;
         @media(max-width:860px){
             transform: scale(.9);
         }
