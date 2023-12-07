@@ -358,7 +358,7 @@ class xCards_Comp extends HTMLElement {
 class fjBtn extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
-        <a href="/Brand.html">
+        <a href="../../pages/brands.html">
         <div class="fj-container">
             <div class="fj-col">
                 <div class="fj-arrow">
@@ -414,9 +414,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const mobile_nav = document.querySelector(".mob-nav-btn");
 const mob_nav_menu = document.querySelector(".mob-nav-menu");
+const navBG = document.querySelector(".header")
 const toggleNavbar = () => {
   mob_nav_menu.classList.toggle("active");
   document.body.classList.toggle("mobile-menu-active");
+
+  if (navBG.classList.contains("sticky")) {
+    navBG.classList.remove("sticky");
+  }else{
+    navBG.classList.add("sticky")
+  }
 };
 mobile_nav.addEventListener("click", () => toggleNavbar());
 
