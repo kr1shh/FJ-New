@@ -60,7 +60,7 @@ class Footer_comp extends HTMLElement {
                             <h1>FJ</h1>
                         </div>
                         <div class="footer_email">
-                            <p>info@youremail.com</p>
+                            <p>info@fjdesigns.in</p>
                         </div>
                         <div class="footer_icons">
                             <a href="https://www.instagram.com/thefjdesigns">
