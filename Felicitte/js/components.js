@@ -15,7 +15,7 @@ class Footer_Comp extends HTMLElement {
             </div> -->
             <div class="footer-item">
                 <img src="./assets/img/Felicette white.png"><br>
-                <span>Companymail@mail.com</span><br><br>
+                <span>info@fjdesigns.in</span><br><br>
                 <div class="social-icons">
                     <a href="https://instagram.com/felicette.in?igshid=NzZlODBkYWE4Ng==">
                         <svg class="ins-icon" width="26" height="27" viewBox="0 0 26 27" fill="none"
