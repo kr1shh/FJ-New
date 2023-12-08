@@ -1,5 +1,8 @@
 $text-color:black;
 $background:white;
+$small-shadow:3px 3px 3px  #00000033;
+$big-shadow:5px 5px 5px  #00000033;
+
 
 $font_family:'Montserrat';
 $bold:700;
@@ -66,6 +69,8 @@ div.gallery_container{
                 height: 50%;
                 border-radius: 30px;
                 overflow: hidden;
+                box-shadow: $small-shadow;
+
 
                 &:hover{
                     img{

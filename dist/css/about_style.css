@@ -22,6 +22,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 769px) {
   .about_containerr .content_img {

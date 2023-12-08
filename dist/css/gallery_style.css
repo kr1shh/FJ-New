@@ -57,6 +57,7 @@ div.gallery_container .gallery_covers .gallery_row .gallery_img {
   height: 50%;
   border-radius: 30px;
   overflow: hidden;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 div.gallery_container .gallery_covers .gallery_row .gallery_img:hover img {
   transform: scale(1.2);

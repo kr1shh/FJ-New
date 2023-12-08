@@ -1,5 +1,8 @@
 $text-color:black;
 $background:white;
+$small-shadow:3px 3px 3px  #00000033;
+$big-shadow:5px 5px 5px  #00000033;
+
 
 $font_family:'Montserrat';
 $bold:700;
@@ -14,6 +17,7 @@ $light:300;
     justify-content: center;
     gap: 30px;
     font-family: $font_family;
+    box-shadow: $big-shadow;
 
     @media(max-width:480px){
         display: flex;
@@ -110,6 +114,7 @@ $light:300;
         margin-top: 40px;
         // margin-bottom: 130px;
         border-radius: 30px;
+        box-shadow: $big-shadow;
     }
     
     p{

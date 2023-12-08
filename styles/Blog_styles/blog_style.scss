@@ -1,5 +1,8 @@
 $text-color:black;
 $background:white;
+$small-shadow:3px 3px 3px  #00000033;
+$big-shadow:5px 5px 5px  #00000033;
+
 
 $font_family:'Montserrat';
 $bold:700;
@@ -34,6 +37,7 @@ section div.blog_container{
             height: 230px;
             border-radius: 50px;
             background-color: #C4C4C4;
+            box-shadow: $big-shadow;
 
 
             @media(max-width:480px){
@@ -142,6 +146,7 @@ section div.blog_container{
             border: solid 1px #C4C4C4;
             border-radius: 40px 40px 8px 8px;
             gap: 15px;
+            box-shadow: $big-shadow;
 
 
             .blog_cover_2{

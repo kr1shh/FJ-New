@@ -1,5 +1,7 @@
 $text-color:black;
 $background:white;
+$small-shadow:3px 3px 3px  #00000033;
+$big-shadow:5px 5px 5px  #00000033;
 
 $font_family:'Montserrat';
 $bold:700;
@@ -138,6 +140,7 @@ section.content_2{
         font-family: $font_family;
         background-color: #D9D9D9;
         border-radius: 140px;
+        box-shadow: $big-shadow;
 
         @media (max-width:1024px){
             width: 95%;
