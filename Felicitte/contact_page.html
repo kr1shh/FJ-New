@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/contact_style.css " rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../dist/css/felicette_contact_style.css">
     <link rel="stylesheet" href="./css/footer_component.css">
     <link rel="stylesheet" href="./css/navbar_component.css">
     <link rel="stylesheet" href="./css/scroll_up.css">
@@ -35,7 +36,7 @@
                                   Contact Section
 ===============================================================================-->
 
-    <section id="contact">
+    <!-- <section id="contact">
         <div class="contact">
             <div class="contact-container" data-aos="fade-in">
                 <div class="contact-item item-1">
@@ -55,7 +56,62 @@
                         onclick="sendMail()">Send Massege</button></div>
             </div>
         </div>
+    </section> -->
+
+
+
+
+
+
+    <section>
+        <div class="mob_contact_container">
+            <p>
+                <span>Get in Touch 👋</span><br>
+                We Love to here from You
+            </p>
+
+            <form action="#">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="number" placeholder="Phone" required>
+                <textarea placeholder="Your Message" cols="30" rows="10"></textarea>
+                <button type="submit">
+                    Send
+                </button>
+            </form>
+        </div>
+
+
+        <div class="desk_contact_container">
+
+            <div class="contact_container">
+                <p>
+                    <span>Get in Touch 👋</span><br>
+                    We Love to here from You
+                </p>
+    
+                <form action="#">
+                    <div class="details">
+                        <div class="details_1">
+                            <input type="text" placeholder="Name" id="name" required>
+                            <input type="email" placeholder="Email" id="email" required>
+                            <input type="number" placeholder="Phone" id="phone" required>
+                        </div>
+                        <textarea placeholder="Your Message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <button onclick="sendMail()">
+                        Send
+                    </button>
+                </form>
+            </div>
+            </div>
+
     </section>
+
+
+
+
+
 
     <!--==========================================================================
                                   Footer
