@@ -160,8 +160,8 @@ mediaQuery.addEventListener("change", changeBodyImage);
        hero.style.backgroundImage = "url('../assets/img/hero-mobile-small.jpg')";
        heroImg.src = "../assets/img/hero-mobile.jpg"
     } else {
-      hero.style.backgroundImage = "url('../assets/img/hero-desk-small.jpg')";
-      heroImg.src = "../assets/img/hero-desk.jpg"
+      hero.style.backgroundImage = "url('../assets/img/themes/FJ-Snowfall/Snow/Felicette-small.jpg')";
+      heroImg.src = "../assets/img/themes/FJ-Snowfall/Snow/Felicette.jpg"
     }
   };
   
