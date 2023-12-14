@@ -1,0 +1,123 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    background-image: url('Felicette.jpg');
+    background-size: cover;
+}
+
+.scale{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.snow{
+    background-image: url('snow-1.png');
+    animation: first-snowfall 20s   infinite;
+}
+
+.snow1{
+    background-image: url('snow-2.png');
+    animation: second-snowfall 40s  infinite;
+    filter: blur(40%);
+}
+
+.snow2{
+    background-image: url('snowballs-lg.png');
+    animation: third-snowfall 10s   infinite;
+}
+
+.snow3{
+    background-image: url('snowballs-md.png');
+    animation: fourth-snowfall 10s   infinite;
+}
+
+.snow4{
+    background-image: url('snowballs-sm.png');
+    animation: fifth-snowfall 10s   infinite;
+}
+
+
+
+@keyframes first-snowfall{
+    0% {
+        background-position: 0% 0%;
+        opacity: .0;    
+    }
+    5%{
+        opacity: .5;    
+
+    }
+    95%{
+        opacity: .5;
+    }
+    100% {
+        background-position: 100% 100%;
+        opacity: .0;    
+
+    }
+}
+
+@keyframes second-snowfall{
+    0% {
+        background-position: 0% 0%;
+        opacity: .0;
+    }
+    5%{
+        opacity: .2;    
+    }
+    95%{
+        opacity: .2;
+    }
+    100% {
+        background-position: 100% 100%;
+        opacity: .0;
+    }
+}
+
+@keyframes third-snowfall {
+    0% {
+        background-position: 0% 0%;
+        opacity: .0;
+    }
+    50%{
+        opacity: .2;
+    }
+    100% {
+        background-position: 100% 100%;
+        opacity: .0;
+    }
+}
+
+@keyframes fourth-snowfall {
+    0% {
+        background-position: 0% 0%;
+        opacity: .0;
+    }
+    50%{
+        opacity: .1;
+    }
+    100% {
+        background-position: 100% 100%;
+        opacity: .0;
+    }
+}
+
+@keyframes fifth-snowfall {
+    0% {
+        background-position: 0% 0%;
+        opacity: .0;
+    }
+    50%{
+        opacity: .1;
+    }
+    100% {
+        background-position: 100% 100%;
+        opacity: .0;
+    }
+}

@@ -185,4 +185,109 @@ section.content_2 .home_content_2 .cont_sec:nth-child(2) p {
     text-align: center;
     width: 265px;
   }
+}
+
+.scale {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.snow {
+  background-image: url("../../assets/img/themes/FJ-Snowfall/Snow/snow-1.png");
+  animation: first-snowfall 20s infinite;
+}
+
+.snow1 {
+  background-image: url("../../assets/img/themes/FJ-Snowfall/Snow/snow-2.png");
+  animation: second-snowfall 40s infinite;
+  filter: blur(40%);
+}
+
+.snow2 {
+  background-image: url("../../assets/img/themes/FJ-Snowfall/Snow/snowballs-lg.png");
+  animation: third-snowfall 10s infinite;
+}
+
+.snow3 {
+  background-image: url("../../assets/img/themes/FJ-Snowfall/Snow/snowballs-md.png");
+  animation: fourth-snowfall 10s infinite;
+}
+
+.snow4 {
+  background-image: url("../../assets/img/themes/FJ-Snowfall/Snow/snowballs-sm.png");
+  animation: fifth-snowfall 10s infinite;
+}
+
+@keyframes first-snowfall {
+  0% {
+    background-position: 0% 0%;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.5;
+  }
+  95% {
+    opacity: 0.5;
+  }
+  100% {
+    background-position: 100% 100%;
+    opacity: 0;
+  }
+}
+@keyframes second-snowfall {
+  0% {
+    background-position: 0% 0%;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.2;
+  }
+  95% {
+    opacity: 0.2;
+  }
+  100% {
+    background-position: 100% 100%;
+    opacity: 0;
+  }
+}
+@keyframes third-snowfall {
+  0% {
+    background-position: 0% 0%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    background-position: 100% 100%;
+    opacity: 0;
+  }
+}
+@keyframes fourth-snowfall {
+  0% {
+    background-position: 0% 0%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    background-position: 100% 100%;
+    opacity: 0;
+  }
+}
+@keyframes fifth-snowfall {
+  0% {
+    background-position: 0% 0%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    background-position: 100% 100%;
+    opacity: 0;
+  }
 }/*# sourceMappingURL=home.css.map */
