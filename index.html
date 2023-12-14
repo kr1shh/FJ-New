@@ -38,6 +38,7 @@
                 <p>FASHION IS NOT JUST ABOUT CLOTHES </p>
             </div>
         </div>
+        <div class="lottie_comp" id="lottie"></div>
     </section>
 
 
@@ -58,8 +59,47 @@
 
 
     <footer-el></footer-el>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
+    integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./components/components.js"></script>
     <script src="./javascripts/blurLoad.js"></script>
     <script src="https://kit.fontawesome.com/948a568d62.js" crossorigin="anonymous"></script>
+
+    <script>
+        // Function to start the animation
+        function startAnimation() {
+            var animation = bodymovin.loadAnimation({
+                container: document.getElementById('lottie'),
+                path: './assets/img/themes/Fj-Christmas.json',
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+            });
+
+            animation.play();
+        }
+
+        // Intersection Observer setup
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5 // Adjust as needed, represents the visibility percentage
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // If the element enters the viewport
+                    startAnimation(); // Start the animation
+                    observer.unobserve(entry.target); // Stop observing once triggered
+                }
+            });
+        }, options);
+
+        // Element to observe
+        const lottieElement = document.getElementById('lottie');
+        observer.observe(lottieElement);
+    </script>
 </body>
 </html>
