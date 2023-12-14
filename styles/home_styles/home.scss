@@ -78,6 +78,7 @@ section.content_1{
         top: -17px;
         right: -10px;
         width: 150px;
+        z-index: -1;
         transform: rotate(30deg);
 
         @media(max-width:480px){
