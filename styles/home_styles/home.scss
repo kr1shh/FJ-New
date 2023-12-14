@@ -79,6 +79,10 @@ section.content_1{
         right: -10px;
         width: 150px;
         transform: rotate(30deg);
+
+        @media(max-width:480px){
+            width: 105px;
+        }
     }
     .home_content_1{
         width: 100%;
